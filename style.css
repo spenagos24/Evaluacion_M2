@@ -1,0 +1,61 @@
+/* la etiqueta body es donde se almacena todo el contenido que vemos en nuestro proyecto html */
+body {
+    /* Es un atributo de texto que define la fuente del texto es decir el estilo de la letra */
+    font-family: sans-serif;
+    /* Agrega una margen al elemento */
+    margin: 0;
+}
+
+/* es un selector de clase de nuestro archivo html */
+.contenedor {
+    /* es un atributo css de visualizacion */
+    display: flex; 
+    /* el atributo flex-wrap es la encargada de ajustarnuestro contenido según del tamaño de la ventana (por elementos)*/
+    flex-wrap: wrap; 
+    /* es el atributo encargado de determinar la direccion principal del contenedor */
+    justify-content: space-around; 
+    /* es una propiedad que define el espacio dentro del borde de un elemento con 20 pixeles */
+    padding: 20px;
+}
+
+/* es un selector  de clase que es un contenedor padre */
+.tarjeta {
+    /* es una propiedad de define el ancho del contenido */
+    width: 300px; 
+    /* es una propiedad que define el espacio fuera del borde de un elemento */
+    margin: 10px; 
+    /* es una propiedad que agrega un borde al contenido, puede varias y se pueden agregar más caracteristicas que cambian su diseño, tamaño, color etc */
+    border: 1px solid #ccc; 
+    /* es una propiedad que define el espacio dentro del borde de un elemento con 20 pixeles */
+    padding: 20px; 
+    /* es un atributo de border que permite redondear las esquinas de 5px todos sus lados*/
+    border-radius: 5px; 
+    /* es un atributo de borde que permite agregar sombra al borde */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* es un selector de clase de un contendor hijo que toma las propiedades de su contenedor padre */
+.tarjeta img {
+    /* es un atributo que agrega un ancho de 100% a el contenido osea tamaño completo mostrado en pantalla*/
+    width: 100%; 
+    /* es un atributo que define el alto de nuestro elemento y está definido en automatico segun la ventana y al ajuste del otro contenido */
+    height: auto; 
+    /* es un atributo que nos permite definir como se muestra nuestro contenido como block, bloque independiente que ocupa toda la linea */
+    display: block; 
+    /*es un atributo de border que permite redondear las esquinas de 5px en solo dos esquinas  */
+    border-radius: 5px 5px 0 0; 
+}
+
+/* es un selector de clase hijo del selector tarjeta padre */
+.tarjeta h3 {
+    /* atributo para agregar una margen en la parte superior del elemento */
+    margin-top: 10px; 
+}
+
+/* es un selector de clase hijo del selector tarjeta padre */
+.tarjeta p {
+    /* es el atributo para definir el tamaño de nuestra fuente (letra) que es de 0.9 al tamaño de la fuente actual*/
+    font-size: 0.9em; 
+    /* es una pripiedad que establece la altura de una casilla remarcada por líneas */
+    line-height: 1.5; 
+}
